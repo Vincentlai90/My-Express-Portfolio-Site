@@ -1,0 +1,64 @@
+<!-- Full name: Lai Minh Huy
+   COMP 229 – Web Application Development
+   Student ID: 301225382
+   Date: 08/10/2023
+   Created by Huy Lai. Copyright Fall 2023. All Rights reserved to Huy Lai
+-->
+
+<!--Main Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
+    <div class="container-fluid">
+      <img class="logohead" src="/images/logo.png" alt="logo" style: width="250px"; height="60px">
+      <link rel="stylesheet" href="/Content/app.css">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-max ml-auto mb-2 mb-lg-0">
+
+          <b>
+
+          <% if (title=="Home"){%>
+          <li class="nav-item active">
+            <%}else{%>
+              <li class="nav-item">
+                <%}%>
+            <a class="nav-link"  href="/"><i class="fas fa-lg fa-laptop-house fa-shake"></i>Home</a>
+          </li>
+           <% if (title=="About"){%>
+          <li class="nav-item active">
+            <%}else{%>
+              <li class="nav-item">
+                <%}%>
+            <a class="nav-link"  href="/about"><i class="fa-solid fa-address-card fa-shake"></i>About</a>
+          </li>
+          <% if (title=="Contact"){%>
+            <li class="nav-item active">
+            <%}else{%>
+          <li class="nav-item">
+            <%}%>
+            <a class="nav-link"  href="/contact"><i class="fa-solid fa-address-book fa-shake"></i>Contact</a>
+          </li>
+           <% if (title=="Product"){%>
+            <li class="nav-item active">
+            <%}else{%>
+          <li class="nav-item">
+            <%}%>
+            <a class="nav-link"  href="/products"><i class="fa-brands fa-product-hunt fa-shake"></i>Product</a>
+          </li>
+           <% if (title=="Services"){%>
+            <li class="nav-item active">
+            <%}else{%>
+          <li class="nav-item">
+            <%}%>
+            <a class="nav-link"  href="/services"><i class="fa-brands fa-servicestack fa-shake"></i>Services</a>
+          </li>
+
+        </b>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Main Navigation end-->
